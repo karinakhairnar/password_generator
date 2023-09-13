@@ -1,0 +1,53 @@
+.pass{
+
+}
+
+.generator{
+  
+  background-image: linear-gradient(-225deg, #e75874 0%, #fbcbc9 100%);
+  border-radius: 10px;
+  padding: 5rem;
+  width: 60%;
+    margin: 5rem auto;
+}
+.generator__header{
+  text-align: center;
+  color: #be1558;
+  margin-bottom: 20px;
+}
+.generator__password{
+  background-color:#be1558;
+
+  color: #ffc13b;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: space-around;
+}
+.copy__btn{
+  color: #ffc13b;
+  background: #be1558;
+  border: none;
+  cursor: pointer;
+  font-size:large;
+}
+.generator__btn{
+  background: #be1558;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  color: #ffc13b;
+  border-radius: 30px;
+  font-size: 17px;
+  cursor: pointer;
+
+}
+.form-group{
+  display: flex;
+  justify-content: space-between;
+  color: gre;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}

@@ -3,11 +3,11 @@ import { numbers, upperCaseLetters, lowerCaseLetters, specialCharacters } from '
 import { COPY_Fail, COPY_SUCCESS } from '../Comman/msg';
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'; 
-import "../../App.css";
+import '../Style/generoter.css'
 
 export const Pass_generoter = () => {
     const [password, setPassword] = useState("")
-  const [passwordLength, setPasswordLength] = useState(26)
+  const [passwordLength, setPasswordLength] = useState(10)
   const [includeUpperCase, setIncludeUpperCase] = useState(false)
   const [includeLowerCase, setIncludeLowerCase] = useState(false)
   const [includeNumbers, setIncludeNumbers] = useState(false)
@@ -94,8 +94,9 @@ export const Pass_generoter = () => {
           </h2>
           <div className="generator__password">
             <h3 >{password}</h3>
-            <button className="copy__btn">
-              <i onClick={handleCopyPassword} className="far fa-clipboard"></i>
+            <button className="copy__btn" onClick={handleCopyPassword}>
+            Copy Password
+              {/* <i onClick={handleCopyPassword} className="far fa-clipboard"></i> */}
             </button>
           </div>
           <div className="form-group">
